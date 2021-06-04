@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Remove CSS</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+
+.blue{
+ color: greenyellow;
+}
+</style>
+</head>
+<body>
+<h1 class="blue">This is Heading H1</h1>
+<h2 class="blue">This is a  Heading h2</h2>
+<p class="blue">this is test </p>
+<div>This is text sometime</div>
+<button>This Is The Remove The Css</button>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+     $('button').click(function(){
+         $("h1,h2,p").removeClass("blue");
+     })
+    });
+</script>

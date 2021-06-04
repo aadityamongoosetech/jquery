@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<title>empty</title>
+</head>
+<body>
+<div id="div2" style="width: 100%; height: 100px; background-color: plum;">
+<p>THis is some text in div</p>
+<p>THis is text</p>
+<p>THis is the some one text</p>
+<br>
+</div>
+<button>click me</button>
+</body>
+</html>
+<script>
+$(document).ready(function(){
+$('button').click(function(){
+$('#div2').empty();
+});
+});
+</script>

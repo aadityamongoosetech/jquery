@@ -1,0 +1,32 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+       $('button').click(function(){
+       $("h1,h2,p").addClass('important');
+       $('div').addClass('blue');
+       });
+        });
+    </script>
+<title>addcss</title>
+<style>
+.important
+{
+    font-size: xx-large;
+    font-weight: 900;
+}
+.blue
+{
+    color: indianred;
+}
+</style>
+</head>
+<body>
+<h1>This is a Heading1 </h1>
+<h2>This is a Heading2</h2>
+<p>THis is paragraph</p>
+<div>This is the someone text</div>
+<button>Add The Class</button>
+</body>
+</html>

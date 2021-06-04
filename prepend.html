@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>prepend</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<p>THis is a pargraph</p>
+<p>This is another pargraphs</p>
+<ol>
+    <li>List Item1</li>
+    <li>List Item2</li>
+    <li>List item3</li>
+</ol>
+<button id="btn1">Prepend text</button>
+<button id="btn2">Prepend list item</button>
+
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+   $('#btn1').click(function(){
+   $('p').prepend("<b>prepend</b>")
+   });
+   $('#btn2').click(function(){
+   $('ol').prepend("<li>prepend list item</li>")
+   });
+    });
+</script>

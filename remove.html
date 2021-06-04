@@ -1,0 +1,24 @@
+<html>
+<head>
+<title></title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="div1" style="width: 100%; height: 100px; background-color: violet;" >
+This is some text in hte 
+<p>This is the pargraph in the div</p>
+<p>This is another pargraph in the div.</p>
+
+</div>
+<br>
+<button>Remove The Elememt</button>
+</body>
+</html>
+<script>
+$(document).ready(function(){
+$('button').click(function(){
+$('#div1').remove();
+});
+
+});
+</script>

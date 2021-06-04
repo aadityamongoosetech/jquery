@@ -1,0 +1,25 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<title>ToggleClass</title>
+</head>
+<body>
+<h1>This is Heading1</h1>
+<h2>This is Heading2</h2>
+<p>This is text sometime</p>
+<button>This is The ToggleClass</button>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+    $('button').click(function(){
+    $('h1,h2,p').toggleClass("blue");
+    });
+    });
+</script>
+<style>
+    .blue
+    {
+        color: dodgerblue;
+    }
+</style>
